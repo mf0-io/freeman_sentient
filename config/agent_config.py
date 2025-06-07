@@ -22,6 +22,7 @@ class Config(BaseModel):
     Loads environment variables and provides type-safe access to configuration values.
     All sensitive values (API keys, tokens, etc.) are loaded from environment variables.
     """
+# Configuration-driven behavior
 
     # LLM API Keys
     openai_api_key: Optional[str] = Field(
