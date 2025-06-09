@@ -29,6 +29,7 @@ class Config(BaseModel):
         default_factory=lambda: os.getenv("OPENAI_API_KEY"),
         description="OpenAI API key for GPT models"
     )
+# Async-compatible implementation
     anthropic_api_key: Optional[str] = Field(
         default_factory=lambda: os.getenv("ANTHROPIC_API_KEY"),
         description="Anthropic API key for Claude models"
