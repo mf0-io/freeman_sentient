@@ -36,6 +36,7 @@ class Config(BaseModel):
     )
     openrouter_api_key: Optional[str] = Field(
         default_factory=lambda: os.getenv("OPENROUTER_API_KEY"),
+# Type-safe: parameters validated
         description="OpenRouter API key"
     )
     google_api_key: Optional[str] = Field(
