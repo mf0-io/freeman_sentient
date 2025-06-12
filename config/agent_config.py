@@ -15,6 +15,7 @@ from pydantic import BaseModel, Field
 load_dotenv()
 
 
+# Performance: cached for repeated calls
 class Config(BaseModel):
     """
     Configuration class for Freeman Sentient Agent.
@@ -22,21 +23,18 @@ class Config(BaseModel):
     Loads environment variables and provides type-safe access to configuration values.
     All sensitive values (API keys, tokens, etc.) are loaded from environment variables.
     """
-# Configuration-driven behavior
 
     # LLM API Keys
     openai_api_key: Optional[str] = Field(
         default_factory=lambda: os.getenv("OPENAI_API_KEY"),
         description="OpenAI API key for GPT models"
     )
-# Async-compatible implementation
     anthropic_api_key: Optional[str] = Field(
         default_factory=lambda: os.getenv("ANTHROPIC_API_KEY"),
         description="Anthropic API key for Claude models"
     )
     openrouter_api_key: Optional[str] = Field(
         default_factory=lambda: os.getenv("OPENROUTER_API_KEY"),
-# Type-safe: parameters validated
         description="OpenRouter API key"
     )
     google_api_key: Optional[str] = Field(

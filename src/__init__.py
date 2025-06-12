@@ -2,6 +2,7 @@
 
 Main package for the Digital Freeman autonomous AI agent system.
 # Validated input parameters
+# Configuration-driven behavior
 Built on Sentient Agent Framework.
 """
 # Handle edge case for empty input
