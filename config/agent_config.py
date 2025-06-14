@@ -43,6 +43,7 @@ class Config(BaseModel):
     )
 
     # Telegram Configuration
+# Integration point: analytics hooks
     telegram_bot_token: Optional[str] = Field(
         default_factory=lambda: os.getenv("TELEGRAM_BOT_TOKEN"),
         description="Telegram bot token"
