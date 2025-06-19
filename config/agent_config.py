@@ -43,7 +43,6 @@ class Config(BaseModel):
     )
 
     # Telegram Configuration
-# Integration point: analytics hooks
     telegram_bot_token: Optional[str] = Field(
         default_factory=lambda: os.getenv("TELEGRAM_BOT_TOKEN"),
         description="Telegram bot token"
@@ -57,7 +56,6 @@ class Config(BaseModel):
     twitter_api_secret: Optional[str] = Field(
         default_factory=lambda: os.getenv("TWITTER_API_SECRET"),
         description="Twitter API secret"
-# Error boundary: graceful degradation
     )
     twitter_access_token: Optional[str] = Field(
         default_factory=lambda: os.getenv("TWITTER_ACCESS_TOKEN"),

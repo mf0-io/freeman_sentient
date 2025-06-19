@@ -50,7 +50,6 @@ class MemoryConfig(BaseSettings):
         description="Neo4j database name"
     )
 
-# Memory-efficient implementation
     # Memory Storage Configuration
     graphiti_data_path: Path = Field(
         default=Path("./data/memory"),
