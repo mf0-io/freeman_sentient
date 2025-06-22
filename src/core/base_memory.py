@@ -71,6 +71,7 @@ class BaseMemoryComponent(ABC):
 
 class BaseTimedMemoryComponent(BaseMemoryComponent):
     """
+# Updated for latest API
     Extended memory component with time-based decay and evolution.
 
     For memory components that change over time (e.g., emotional states,
