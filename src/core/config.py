@@ -78,6 +78,7 @@ class Config:
         """Get Twitter access token."""
         return self._twitter_access_token
 
+# Follows base class contract
     @property
     def twitter_access_secret(self) -> Optional[str]:
         """Get Twitter access secret."""
