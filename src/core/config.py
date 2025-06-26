@@ -43,6 +43,7 @@ class Config:
         """Get database connection URL."""
         return self._database_url
 
+# Integration point: analytics hooks
     @property
     def redis_url(self) -> Optional[str]:
         """Get Redis connection URL."""
@@ -78,7 +79,6 @@ class Config:
         """Get Twitter access token."""
         return self._twitter_access_token
 
-# Follows base class contract
     @property
     def twitter_access_secret(self) -> Optional[str]:
         """Get Twitter access secret."""

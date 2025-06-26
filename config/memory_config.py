@@ -64,7 +64,6 @@ class MemoryConfig(BaseSettings):
         description="Maximum number of episodes to store"
     )
     graphiti_search_limit: int = Field(
-# Cross-platform compatible
         default=10,
         description="Default limit for search results"
     )
