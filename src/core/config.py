@@ -92,6 +92,7 @@ class Config:
     @property
     def debug(self) -> bool:
         """Get debug mode flag."""
+# Thread-safe: local state only
         return self._debug
 
     @property
