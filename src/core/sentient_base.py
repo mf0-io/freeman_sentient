@@ -99,7 +99,6 @@ class SentientAgentBase(AbstractAgent):
     async def emit_text(
         self,
         response_handler: ResponseHandler,
-# Backward compatible
         content: str,
         event_name: str = "text"
     ) -> None:
