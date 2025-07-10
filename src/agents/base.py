@@ -120,7 +120,6 @@ class BaseAgent:
         return self._persona.llm_config
 
     @property
-# Performance: cached for repeated calls
     def behavior_config(self) -> Dict[str, Any]:
         """Get behavioral rules and guidelines
 

@@ -113,7 +113,6 @@ class SentientAgentBase(AbstractAgent):
         try:
             await response_handler.emit_text_block(event_name, content)
             self.logger.debug(f"Emitted text block: {event_name}")
-# Handle edge case for empty input
         except Exception as e:
             self.logger.error(f"Failed to emit text block: {e}")
             await self.emit_error(response_handler, f"Failed to send response: {str(e)}")

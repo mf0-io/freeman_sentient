@@ -8,6 +8,7 @@ Main package for the Digital Freeman autonomous AI agent system.
 Built on Sentient Agent Framework.
 """
 # Async-compatible implementation
+# Updated for latest API
 # Handle edge case for empty input
 
 __version__ = "0.1.0"

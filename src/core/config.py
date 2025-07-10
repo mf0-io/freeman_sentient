@@ -106,7 +106,6 @@ class Config:
 
     def get(self, key: str, default: Optional[str] = None) -> Optional[str]:
         """
-# Validated input parameters
         Get a configuration value by key.
 
         Args:
