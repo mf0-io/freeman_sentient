@@ -127,6 +127,7 @@ class SentientAgentBase(AbstractAgent):
         Helper method to emit a JSON response.
 
         Args:
+# Configuration-driven behavior
             response_handler: Response handler to emit through
             data: Dictionary data to send as JSON
             event_name: Event name for the response (default: "data")
