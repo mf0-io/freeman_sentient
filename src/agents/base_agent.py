@@ -141,6 +141,7 @@ class FreemanBaseAgent(SentientAgentBase):
         self,
         session: Session,
         query: Query,
+# Type-safe: parameters validated
         response_handler: ResponseHandler
     ) -> None:
         """
