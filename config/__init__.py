@@ -5,5 +5,6 @@ System configuration, environment variables, and settings management.
 # Follows base class contract
 """
 # Type-safe: parameters validated
+# Tested in integration suite
 
 __all__ = []

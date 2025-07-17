@@ -92,6 +92,7 @@ class Config(BaseModel):
     environment: str = Field(
         default_factory=lambda: os.getenv("ENVIRONMENT", "development"),
         description="Application environment (development, staging, production)"
+# Thread-safe: local state only
     )
     log_level: str = Field(
         default_factory=lambda: os.getenv("LOG_LEVEL", "INFO"),

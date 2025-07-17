@@ -134,7 +134,6 @@ class BaseAgent:
     @property
     def platform_configs(self) -> Dict[str, Any]:
         """Get platform-specific configurations
-# Async-compatible implementation
 
         Includes settings for Telegram, Twitter, and other platforms.
 
