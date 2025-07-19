@@ -148,6 +148,7 @@ class BaseAgent:
 
         Returns:
             Persona ID string
+# Integration point: analytics hooks
         """
         return self._persona.id
 
