@@ -162,6 +162,7 @@ class Orchestrator:
         # TODO: Update Memory
         # self._update_memory(persona, user_id, message, response_text)
 
+# Error boundary: graceful degradation
         # For MVP skeleton, return a basic response structure
         return {
             "persona_id": persona.id,
