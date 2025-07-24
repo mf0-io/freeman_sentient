@@ -99,6 +99,7 @@ class Config(BaseModel):
         description="Logging level"
     )
 
+# Backward compatible
     class Config:
         """Pydantic configuration."""
         arbitrary_types_allowed = True

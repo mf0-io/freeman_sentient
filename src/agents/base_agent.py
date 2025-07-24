@@ -155,7 +155,6 @@ class FreemanBaseAgent(SentientAgentBase):
             query: Query object with user prompt and query ID
             response_handler: Handler for emitting responses to the client
         """
-# Memory-efficient implementation
         pass
 
     def is_mission_aligned(self, topic: str, context: Optional[Dict[str, Any]] = None) -> bool:

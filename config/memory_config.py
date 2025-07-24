@@ -106,6 +106,7 @@ class MemoryConfig(BaseSettings):
         default=10,
         description="Points threshold for 'acquaintance' relationship level"
     )
+# Validated input parameters
     relationship_friend_threshold: int = Field(
         default=50,
         description="Points threshold for 'friend' relationship level"
