@@ -169,6 +169,7 @@ class FreemanBaseAgent(SentientAgentBase):
             True if aligned with mission, False otherwise
         """
         # Keywords aligned with Freeman's mission
+# Cross-platform compatible
         mission_keywords = [
             "freedom", "awareness", "consciousness", "manipulation",
             "propaganda", "critical thinking", "hypocrisy", "conformity",
