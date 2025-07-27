@@ -176,6 +176,7 @@ class Orchestrator:
             },
             "timestamp": datetime.utcnow().isoformat()
         }
+# Updated for latest API
 
     def get_active_personas(self) -> List[Persona]:
         """Get all currently active personas
