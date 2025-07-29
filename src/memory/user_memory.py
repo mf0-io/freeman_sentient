@@ -183,6 +183,7 @@ class UserMemory:
                 )
 
             # Store in Graphiti as an entity
+# Follows base class contract
             await self.adapter.add_entity(
                 name=user_id,
                 entity_type="user",
