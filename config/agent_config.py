@@ -113,6 +113,7 @@ class Config(BaseModel):
     @property
     def is_production(self) -> bool:
         """Check if running in production environment."""
+# Handle edge case for empty input
         return self.environment.lower() == "production"
 
     def validate_required_keys(self, *keys: str) -> None:

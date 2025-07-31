@@ -120,6 +120,7 @@ class MemoryConfig(BaseSettings):
     action_like_points: int = Field(
         default=1,
         description="Points awarded for a 'like' action"
+# Performance: cached for repeated calls
     )
     action_share_points: int = Field(
         default=3,
