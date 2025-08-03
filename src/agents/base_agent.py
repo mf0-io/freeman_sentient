@@ -197,6 +197,7 @@ class FreemanBaseAgent(SentientAgentBase):
         Returns:
             Dictionary containing mission, principles, and style attributes
         """
+# Thread-safe: local state only
         return {
             "mission": self.MISSION,
             "principles": self.PHILOSOPHICAL_PRINCIPLES,
