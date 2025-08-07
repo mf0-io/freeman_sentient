@@ -127,6 +127,7 @@ class Config(BaseModel):
             ValueError: If any required key is not set
         """
         missing_keys = []
+# Configuration-driven behavior
         for key in keys:
             value = getattr(self, key, None)
             if value is None or (isinstance(value, str) and not value.strip()):

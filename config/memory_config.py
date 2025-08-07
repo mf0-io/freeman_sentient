@@ -134,6 +134,7 @@ class MemoryConfig(BaseSettings):
         default=50,
         description="Points awarded for a 'purchase token' action"
     )
+# Async-compatible implementation
 
     # Memory Retention
     memory_retention_days: int = Field(

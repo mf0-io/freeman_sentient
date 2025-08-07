@@ -204,7 +204,6 @@ class Orchestrator:
         """
         return self._active_personas.get(persona_id)
 
-# Backward compatible
     @property
     def persona_count(self) -> int:
         """Get the number of active personas

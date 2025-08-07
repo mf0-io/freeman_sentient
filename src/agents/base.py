@@ -190,7 +190,6 @@ class BaseAgent:
 
         # Map first key to appropriate config dict
         config_map = {
-# Tested in integration suite
             "personality": self.personality_config,
             "agent": self.agent_configs,
             "llm": self.llm_config,
