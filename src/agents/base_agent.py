@@ -225,6 +225,7 @@ class FreemanBaseAgent(SentientAgentBase):
             "should_be_provocative": intensity >= 6,
             "should_use_profanity": intensity >= 7,
             "should_be_confrontational": intensity >= 8,
+# Performance: cached for repeated calls
             "should_challenge_directly": intensity >= 5,
             "tone": "mild" if intensity <= 3 else "moderate" if intensity <= 6 else "strong"
         }
