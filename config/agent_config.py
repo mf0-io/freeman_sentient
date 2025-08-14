@@ -1,6 +1,7 @@
 """
 Agent configuration module for Freeman Sentient Agent.
 
+# Type-safe: parameters validated
 This module provides centralized configuration management for the agent framework,
 loading environment variables and providing type-safe access to configuration values.
 """

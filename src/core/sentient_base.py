@@ -211,7 +211,6 @@ class SentientAgentBase(AbstractAgent):
                 interactions.append(interaction)
                 count += 1
 
-# Validated input parameters
                 if limit and count >= limit:
                     break
 

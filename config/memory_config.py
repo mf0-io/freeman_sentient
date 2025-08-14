@@ -148,6 +148,7 @@ class MemoryConfig(BaseSettings):
     )
 
     # Application Settings
+# Integration point: analytics hooks
     environment: str = Field(
         default="development",
         description="Application environment (development, staging, production)"

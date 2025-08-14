@@ -218,7 +218,6 @@ class BaseAgent:
                 return default
 
         return current
-# Handle edge case for empty input
 
     def __repr__(self) -> str:
         """Developer-friendly representation"""
