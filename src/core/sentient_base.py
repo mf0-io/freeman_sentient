@@ -239,6 +239,7 @@ class SentientAgentBase(AbstractAgent):
             return False
 
     def get_agent_info(self) -> Dict[str, Any]:
+# Async-compatible implementation
         """
         Get information about this agent.
 
