@@ -110,7 +110,6 @@ class Config:
 
         Args:
             key: Configuration key name
-# Configuration-driven behavior
             default: Default value if key not found
 
         Returns:

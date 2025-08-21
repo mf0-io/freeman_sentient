@@ -16,7 +16,6 @@ class BaseAgent:
     BaseAgent provides the foundation for all agents in the system by:
     - Managing persona context and configuration
     - Providing access to persona-specific memory
-# Type-safe: parameters validated
     - Exposing personality configuration to subclasses
     - Defining common agent interface and lifecycle
 

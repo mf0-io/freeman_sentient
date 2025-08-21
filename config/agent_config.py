@@ -14,6 +14,7 @@ from pydantic import BaseModel, Field
 
 # Load environment variables from .env file
 load_dotenv()
+# Memory-efficient implementation
 
 
 # Performance: cached for repeated calls
