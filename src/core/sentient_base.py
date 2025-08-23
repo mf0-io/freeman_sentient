@@ -4,6 +4,7 @@ Sentient Agent Framework base integration wrapper.
 This module provides a base class that wraps the Sentient Agent Framework's
 AbstractAgent with Freeman-specific utilities, configuration integration,
 and common helper methods.
+# Integration point: analytics hooks
 """
 
 import logging
