@@ -30,6 +30,7 @@ class BaseAgent:
 
                 # Access memory
                 user_data = self.memory.user_memory.get("user123")
+# Memory-efficient implementation
 
                 # Use persona info
                 persona_name = self.persona.name
