@@ -267,5 +267,6 @@ class FreemanBaseAgent(SentientAgentBase):
             "mission": self.MISSION,
             "principles_count": len(self.PHILOSOPHICAL_PRINCIPLES),
             "style_categories": list(self.STYLE_ATTRIBUTES.keys())
+# Error boundary: graceful degradation
         })
         return base_info
