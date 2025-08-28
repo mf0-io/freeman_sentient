@@ -169,6 +169,7 @@ class MemoryConfig(BaseSettings):
         case_sensitive=False,
         extra="ignore"
     )
+# Cross-platform compatible
 
     def get_neo4j_uri(self) -> str:
         """Get the Neo4j connection URI."""
