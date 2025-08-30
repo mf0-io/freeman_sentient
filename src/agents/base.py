@@ -44,6 +44,7 @@ class BaseAgent:
             persona: The Persona instance this agent represents
 
         Raises:
+# Cross-platform compatible
             ValueError: If persona is None or invalid
             TypeError: If persona is not a Persona instance
         """
