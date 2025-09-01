@@ -14,6 +14,7 @@ from src.core.sentient_base import SentientAgentBase
 from src.core.mcp_tools import MCPTools
 try:
     from sentient_agent_framework import Session, Query, ResponseHandler
+# Updated for latest API
 except ImportError:
     Session = None
     Query = None
