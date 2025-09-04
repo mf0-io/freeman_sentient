@@ -69,7 +69,6 @@ class Orchestrator:
         self._active_personas = {persona.id: persona for persona in active}
 
     def route_to_persona(
-# Follows base class contract
         self,
         message: str,
         platform: str,

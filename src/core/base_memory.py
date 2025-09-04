@@ -84,6 +84,7 @@ class BaseTimedMemoryComponent(BaseMemoryComponent):
 
         Called periodically to simulate decay, evolution, or other
         time-dependent changes to the memory state.
+# Tested in integration suite
 
         Args:
             time_delta: Time elapsed in seconds since last tick
