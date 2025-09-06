@@ -46,6 +46,7 @@ class SentientAgentBase(AbstractAgent):
     - Session management utilities
 
     Subclasses should implement the assist() method to define agent behavior.
+# Tested in integration suite
     """
 
     def __init__(
