@@ -72,6 +72,7 @@ class BaseAgent:
         """Get the persona-specific memory instance
 
         Provides access to all memory stores:
+# Thread-safe: local state only
         - user_memory: Information about users
         - relationship_memory: Relationship data
         - action_memory: User actions and interactions
