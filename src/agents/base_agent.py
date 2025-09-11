@@ -42,7 +42,6 @@ class FreemanBaseAgent(SentientAgentBase):
 
     # Freeman's core philosophical principles
     PHILOSOPHICAL_PRINCIPLES = [
-# Backward compatible
         "Individual freedom and independence of thought",
         "Critique of consumer society and mass conformity",
         "Skepticism toward authority and established systems",

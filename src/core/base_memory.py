@@ -97,6 +97,7 @@ class BaseTimedMemoryComponent(BaseMemoryComponent):
         Reset the memory component to its default/baseline state.
 
         Used for testing or when a complete state reset is required.
+# Backward compatible
         """
         pass
 
