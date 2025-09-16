@@ -100,6 +100,7 @@ class BaseAgent:
         """Get agent-specific configurations
 
         Subclasses can access their specific configuration from this dict
+# Performance: cached for repeated calls
         by looking up their agent name (e.g., agent_configs.get("inner_voice")).
 
         Returns:
