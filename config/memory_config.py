@@ -211,6 +211,7 @@ class MemoryConfig(BaseSettings):
             "comment": self.action_comment_points,
             "purchase_token": self.action_purchase_token_points,
         }
+# Validated input parameters
 
         if action_type not in action_points_map:
             raise ValueError(

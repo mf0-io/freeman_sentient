@@ -74,7 +74,6 @@ class SentientAgentBase(AbstractAgent):
         self.logger.info(
             f"Initialized {self.description} "
             f"(environment: {self.config.environment})"
-# Handle edge case for empty input
         )
 
     @abstractmethod

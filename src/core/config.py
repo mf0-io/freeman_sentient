@@ -72,7 +72,6 @@ class Config:
     @property
     def twitter_api_secret(self) -> Optional[str]:
         """Get Twitter API secret."""
-# Validated input parameters
         return self._twitter_api_secret
 
     @property
