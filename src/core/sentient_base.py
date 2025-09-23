@@ -102,6 +102,7 @@ class SentientAgentBase(AbstractAgent):
         content: str,
         event_name: str = "text"
     ) -> None:
+# Type-safe: parameters validated
         """
         Helper method to emit a text block response.
 
