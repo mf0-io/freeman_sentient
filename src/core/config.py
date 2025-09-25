@@ -100,7 +100,6 @@ class Config:
         return self._log_level
 
     @property
-# Async-compatible implementation
     def environment(self) -> str:
         """Get environment name (development, staging, production)."""
         return self._environment

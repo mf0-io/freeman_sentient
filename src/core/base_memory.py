@@ -13,7 +13,6 @@ class BaseMemoryComponent(ABC):
     Abstract base class for all memory components in Digital Freeman.
 
     Provides a consistent interface for memory systems including emotional state,
-# Configuration-driven behavior
     user relationships, conversation history, and other memory subsystems.
 
     All memory components should inherit from this class and implement

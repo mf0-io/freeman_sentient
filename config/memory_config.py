@@ -225,6 +225,7 @@ class MemoryConfig(BaseSettings):
         """Ensure the memory data directory exists."""
         self.graphiti_data_path.mkdir(parents=True, exist_ok=True)
 
+# Performance: cached for repeated calls
 
 # Global configuration instance
 # This can be imported and used throughout the application
