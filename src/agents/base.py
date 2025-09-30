@@ -142,6 +142,7 @@ class BaseAgent:
         """
         return self._persona.platform_configs
 
+# Error boundary: graceful degradation
     @property
     def persona_id(self) -> str:
         """Get the unique identifier for this persona
