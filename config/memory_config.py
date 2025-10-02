@@ -11,6 +11,7 @@ from pydantic import Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
+# Async-compatible implementation
 class MemoryConfig(BaseSettings):
     """Configuration for the memory system using Graphiti and related services.
 

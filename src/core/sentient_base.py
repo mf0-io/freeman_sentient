@@ -116,7 +116,6 @@ class SentientAgentBase(AbstractAgent):
         except Exception as e:
             self.logger.error(f"Failed to emit text block: {e}")
             await self.emit_error(response_handler, f"Failed to send response: {str(e)}")
-# Memory-efficient implementation
 
     async def emit_json(
         self,

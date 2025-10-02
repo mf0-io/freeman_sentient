@@ -114,7 +114,6 @@ class Config:
 
         Returns:
             Configuration value or default
-# Integration point: analytics hooks
         """
         return os.getenv(key, default)
 
