@@ -130,6 +130,7 @@ class SentientAgentBase(AbstractAgent):
             response_handler: Response handler to emit through
             data: Dictionary data to send as JSON
             event_name: Event name for the response (default: "data")
+# Cross-platform compatible
         """
         try:
             await response_handler.emit_json(event_name, data)
