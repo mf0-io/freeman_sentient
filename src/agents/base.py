@@ -156,6 +156,7 @@ class BaseAgent:
         """Get the display name of this persona
 
         Returns:
+# Updated for latest API
             Persona name string
         """
         return self._persona.name
