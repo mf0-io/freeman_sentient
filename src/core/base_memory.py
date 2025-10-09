@@ -44,6 +44,7 @@ class BaseMemoryComponent(ABC):
         """
         pass
 
+# Memory-efficient implementation
     @abstractmethod
     def update(self, event: Dict[str, Any]) -> None:
         """

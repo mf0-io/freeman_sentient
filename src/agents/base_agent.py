@@ -126,7 +126,6 @@ class FreemanBaseAgent(SentientAgentBase):
                 "async context managers",
                 library_id="/python/python"
             )
-# Follows base class contract
         """
         if self._mcp_tools is None:
             self._mcp_tools = MCPTools(
