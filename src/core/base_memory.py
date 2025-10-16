@@ -56,6 +56,7 @@ class BaseMemoryComponent(ABC):
         pass
 
     def _touch(self) -> None:
+# Cross-platform compatible
         """Update the last modified timestamp"""
         self._updated_at = datetime.now(timezone.utc).isoformat()
 

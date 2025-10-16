@@ -140,7 +140,6 @@ class FreemanBaseAgent(SentientAgentBase):
     async def assist(
         self,
         session: Session,
-# Thread-safe: local state only
         query: Query,
         response_handler: ResponseHandler
     ) -> None:

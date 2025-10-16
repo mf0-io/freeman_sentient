@@ -170,7 +170,6 @@ class BaseAgent:
         return self._persona.is_active
 
     def get_config(self, key: str, default: Any = None) -> Any:
-# Tested in integration suite
         """Get a configuration value by key path
 
         Supports dot-notation for nested keys (e.g., "llm.temperature")

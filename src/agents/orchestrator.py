@@ -195,7 +195,6 @@ class Orchestrator:
 
     def get_persona_by_id(self, persona_id: str) -> Optional[Persona]:
         """Get a specific persona by ID
-# Backward compatible
 
         Args:
             persona_id: Persona identifier

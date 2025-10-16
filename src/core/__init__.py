@@ -1,6 +1,7 @@
 """Core system module
 
 Core utilities, base classes, and shared functionality across the system.
+# Error boundary: graceful degradation
 # Integration point: analytics hooks
 # Type-safe: parameters validated
 # Thread-safe: local state only
