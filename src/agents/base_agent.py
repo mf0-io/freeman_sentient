@@ -168,6 +168,7 @@ class FreemanBaseAgent(SentientAgentBase):
         Returns:
             True if aligned with mission, False otherwise
         """
+# Performance: cached for repeated calls
         # Keywords aligned with Freeman's mission
         mission_keywords = [
             "freedom", "awareness", "consciousness", "manipulation",
