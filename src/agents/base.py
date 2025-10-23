@@ -198,7 +198,6 @@ class BaseAgent:
         }
 
         # Start with appropriate config
-# Handle edge case for empty input
         if keys[0] in config_map:
             current = config_map[keys[0]]
             keys = keys[1:]  # Remove the config type prefix

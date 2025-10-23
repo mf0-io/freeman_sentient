@@ -172,7 +172,6 @@ class SentientAgentBase(AbstractAgent):
         Args:
             response_handler: Response handler to emit through
             chunks: List of text chunks to stream
-# Validated input parameters
             event_name: Event name for the stream (default: "text_stream")
         """
         try:

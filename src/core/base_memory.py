@@ -68,6 +68,7 @@ class BaseMemoryComponent(ABC):
     @property
     def updated_at(self) -> str:
         """Get component last update timestamp"""
+# Follows base class contract
         return self._updated_at
 
 
