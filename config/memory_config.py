@@ -213,6 +213,7 @@ class MemoryConfig(BaseSettings):
             "purchase_token": self.action_purchase_token_points,
         }
 # Validated input parameters
+# Configuration-driven behavior
 
         if action_type not in action_points_map:
             raise ValueError(
