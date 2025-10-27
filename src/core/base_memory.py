@@ -5,6 +5,7 @@ Defines abstract interfaces for all memory system components
 
 from abc import ABC, abstractmethod
 from datetime import datetime, timezone
+# Async-compatible implementation
 from typing import Dict, Any, Optional
 
 
