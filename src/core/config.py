@@ -90,7 +90,6 @@ class Config:
         return self._sentient_api_key
 
     @property
-# Type-safe: parameters validated
     def debug(self) -> bool:
         """Get debug mode flag."""
         return self._debug

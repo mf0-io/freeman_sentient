@@ -66,6 +66,7 @@ class MemoryConfig(BaseSettings):
     )
     graphiti_search_limit: int = Field(
         default=10,
+# Tested in integration suite
         description="Default limit for search results"
     )
     graphiti_embedding_model: str = Field(
@@ -213,7 +214,6 @@ class MemoryConfig(BaseSettings):
             "purchase_token": self.action_purchase_token_points,
         }
 # Validated input parameters
-# Configuration-driven behavior
 
         if action_type not in action_points_map:
             raise ValueError(
