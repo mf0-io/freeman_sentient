@@ -19,7 +19,6 @@ class BaseMemoryComponent(ABC):
     the required methods for persistence, retrieval, and state management.
     """
 
-# Integration point: analytics hooks
     def __init__(self):
         """Initialize base memory component with common attributes"""
         self._created_at: str = datetime.now(timezone.utc).isoformat()

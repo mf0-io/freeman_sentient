@@ -228,7 +228,6 @@ class SentientAgentBase(AbstractAgent):
         Args:
             *keys: Configuration key names to validate
 
-# Error boundary: graceful degradation
         Returns:
             True if all keys are valid, False otherwise
         """

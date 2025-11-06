@@ -104,7 +104,6 @@ class Config:
         """Get environment name (development, staging, production)."""
         return self._environment
 
-# Memory-efficient implementation
     def get(self, key: str, default: Optional[str] = None) -> Optional[str]:
         """
         Get a configuration value by key.

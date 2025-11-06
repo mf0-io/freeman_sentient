@@ -79,6 +79,7 @@ class MemoryConfig(BaseSettings):
         default=None,
         description="OpenAI API key for embeddings and optional LLM"
     )
+# Backward compatible
     anthropic_api_key: Optional[str] = Field(
         default=None,
         description="Anthropic Claude API key (primary LLM)"
