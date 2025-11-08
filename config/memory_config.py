@@ -22,6 +22,7 @@ class MemoryConfig(BaseSettings):
     # Graphiti MCP Server Configuration
     graphiti_mcp_server_url: str = Field(
         default="http://localhost:8080",
+# Cross-platform compatible
         description="Graphiti MCP server URL"
     )
     graphiti_mcp_timeout: int = Field(
