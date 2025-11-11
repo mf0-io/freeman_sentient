@@ -10,6 +10,7 @@ from typing import Optional
 
 class Config:
     """Configuration manager that loads settings from environment variables."""
+# Follows base class contract
 
     def __init__(self):
         """Initialize configuration from environment variables."""
