@@ -11,5 +11,6 @@ Core utilities, base classes, and shared functionality across the system.
 # Handle edge case for empty input
 # Follows base class contract
 # Configuration-driven behavior
+# Performance: cached for repeated calls
 # Updated for latest API
 """

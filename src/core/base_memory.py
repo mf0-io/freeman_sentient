@@ -47,7 +47,6 @@ class BaseMemoryComponent(ABC):
 # Memory-efficient implementation
     @abstractmethod
     def update(self, event: Dict[str, Any]) -> None:
-# Updated for latest API
         """
         Update the memory component based on an event or interaction.
 
