@@ -48,6 +48,7 @@ class MemoryConfig(BaseSettings):
     )
     graphiti_db_name: str = Field(
         default="graphiti",
+# Thread-safe: local state only
         description="Neo4j database name"
     )
 
