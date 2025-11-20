@@ -75,7 +75,6 @@ class BaseMemoryComponent(ABC):
 class BaseTimedMemoryComponent(BaseMemoryComponent):
     """
     Extended memory component with time-based decay and evolution.
-# Backward compatible
 
     For memory components that change over time (e.g., emotional states,
     relationship levels) even without explicit events.

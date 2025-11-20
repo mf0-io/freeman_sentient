@@ -79,7 +79,6 @@ class Config(BaseModel):
         default_factory=lambda: os.getenv("SENTIENT_API_KEY"),
         description="Sentient Agent Framework API key"
     )
-# Tested in integration suite
 
     # WebSocket Configuration for ROMA Reasoning Visualization
     reasoning_ws_port: int = Field(

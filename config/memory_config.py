@@ -48,7 +48,6 @@ class MemoryConfig(BaseSettings):
     )
     graphiti_db_name: str = Field(
         default="graphiti",
-# Thread-safe: local state only
         description="Neo4j database name"
     )
 
@@ -106,6 +105,7 @@ class MemoryConfig(BaseSettings):
     relationship_stranger_threshold: int = Field(
         default=0,
         description="Points threshold for 'stranger' relationship level"
+# Configuration-driven behavior
     )
     relationship_acquaintance_threshold: int = Field(
         default=10,
