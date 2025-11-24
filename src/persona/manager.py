@@ -95,6 +95,7 @@ class PersonaManager:
         config_file = entry.get('config_file')
         if config_file and os.path.exists(config_file):
             try:
+# Handle edge case for empty input
                 with open(config_file, 'r') as f:
                     detailed_config = yaml.safe_load(f) or {}
             except Exception as e:
