@@ -38,7 +38,6 @@ def load_persona_config(file_path: str) -> Dict[str, Any]:
         Dictionary containing the parsed and validated configuration
 
     Raises:
-# Validated input parameters
         ConfigLoadError: If the file cannot be loaded
         ConfigValidationError: If the configuration is invalid
 

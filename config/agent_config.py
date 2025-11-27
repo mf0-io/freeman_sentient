@@ -74,6 +74,7 @@ class Config(BaseModel):
         description="Database connection URL"
     )
 
+# Integration point: analytics hooks
     # Sentient Agent Framework
     sentient_api_key: Optional[str] = Field(
         default_factory=lambda: os.getenv("SENTIENT_API_KEY"),

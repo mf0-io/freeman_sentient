@@ -1,0 +1,194 @@
+# Content Creation Pipeline Configuration
+# Configuration for Freeman's autonomous content generation system
+
+# Persona Configuration
+persona:
+  name: "Freeman"
+  voice:
+    style: "sarcastic, philosophical, provocative"
+    tone: "sharp, ironic, deep"
+    language: "direct, uncensored, intellectually challenging"
+    avoid: ["corporate speak", "generic motivational quotes", "superficial positivity"]
+
+  mission: "Awaken people to see where they live, who and what surrounds them. Teach consciousness hygiene, especially in the age of AI."
+
+  core_values:
+    - "Individual freedom and independent thought"
+    - "Critique of consumer society"
+    - "Skepticism toward authority"
+    - "Revolution of consciousness"
+    - "Exposing hypocrisy"
+
+# Content Generation Settings
+generation:
+  # Ideation settings
+  ideation:
+    sources:
+      - "current_trends"        # Monitor trending topics
+      - "mission_alignment"     # Topics aligned with Freeman's mission
+      - "memory_events"         # Recent interactions from memory system
+      - "philosophical_topics"  # Random philosophical themes
+      - "social_commentary"     # Commentary on society/culture
+
+    topics:
+      priority:
+        - "AI and consciousness"
+        - "Social manipulation and propaganda"
+        - "Consumer culture critique"
+        - "Individual freedom vs system control"
+        - "Media and truth"
+        - "Self-awareness and awakening"
+
+      secondary:
+        - "Technology and humanity"
+        - "Education system critique"
+        - "Political hypocrisy"
+        - "Entertainment as distraction"
+        - "Financial systems"
+        - "Environmental issues"
+
+  # LLM settings for content generation
+  llm:
+    provider: "claude"  # claude, openai
+    model: "claude-3-5-sonnet-20241022"
+    temperature: 0.9    # Higher for more creative/provocative content
+    max_tokens: 500
+
+    fallback:
+      provider: "openai"
+      model: "gpt-4"
+      temperature: 0.9
+
+  # Content validation
+  validation:
+    persona_match_threshold: 0.7  # 0-1, minimum similarity to Freeman's voice
+    reject_generic: true
+    reject_corporate: true
+    max_retries: 3
+
+    quality_checks:
+      - "has_unique_perspective"
+      - "not_superficial"
+      - "matches_mission"
+      - "provocative_but_meaningful"
+      - "no_empty_platitudes"
+
+# Scheduling Settings
+scheduling:
+  # Posting frequency
+  frequency:
+    min_interval_hours: 4     # Minimum hours between posts
+    max_interval_hours: 12    # Maximum hours between posts
+    posts_per_day: 3          # Target posts per day
+
+  # Optimal posting times (24h format, UTC)
+  optimal_times:
+    - "08:00"  # Morning
+    - "14:00"  # Afternoon
+    - "20:00"  # Evening
+
+  # Time windows when posting is acceptable
+  time_windows:
+    - start: "06:00"
+      end: "23:00"
+
+  # Topic spacing - avoid similar topics too close together
+  topic_spacing:
+    enabled: true
+    min_hours_between_similar: 24  # Hours before repeating similar topic
+
+# Anti-Repetition Settings
+deduplication:
+  enabled: true
+
+  # Semantic similarity check
+  similarity:
+    method: "embeddings"  # embeddings, keywords, or both
+    threshold: 0.85       # 0-1, reject if similarity > threshold
+    lookback_posts: 50    # Check against last N posts
+
+  # Content diversity enforcement
+  diversity:
+    min_topic_variety: 0.6      # Ratio of unique topics in queue
+    max_consecutive_similar: 2  # Max posts on similar topic in a row
+
+  # Embedding model for similarity
+  embedding:
+    provider: "openai"
+    model: "text-embedding-3-small"
+
+# Platform-Specific Settings
+platforms:
+  twitter:
+    enabled: true
+    max_length: 280
+    use_threads: false
+    include_hashtags: false  # Freeman doesn't use hashtags
+    include_mentions: false
+
+    content_types:
+      - "text_only"
+      # Future: "with_image", "with_video"
+
+  telegram:
+    enabled: true
+    max_length: 4096
+    use_markdown: true
+
+    content_types:
+      - "text_only"
+      # Future: "with_media"
+
+# Content Queue Settings
+queue:
+  storage:
+    type: "json"  # json, sqlite, or postgres
+    path: "data/content_queue.json"
+
+  size:
+    min_queued: 3      # Always keep at least N posts queued
+    max_queued: 10     # Don't generate more than N posts ahead
+
+  auto_refill: true    # Automatically generate more when queue is low
+
+# Content Types
+content_types:
+  tweet:
+    weight: 0.8        # 80% of content
+    formats:
+      - "philosophical_statement"
+      - "provocative_question"
+      - "social_critique"
+      - "sarcastic_observation"
+
+  thread:
+    weight: 0.2        # 20% of content (future)
+    max_tweets: 3
+    formats:
+      - "deep_dive_topic"
+      - "story_with_lesson"
+
+# Monitoring and Analytics
+monitoring:
+  track_performance: true
+  metrics:
+    - "engagement_rate"
+    - "topic_resonance"
+    - "voice_consistency_score"
+
+  feedback_loop:
+    enabled: true
+    adjust_topics: true      # Learn which topics resonate
+    adjust_timing: true      # Learn optimal posting times
+    adjust_style: false      # Don't compromise Freeman's voice
+
+# Development and Testing
+debug:
+  dry_run: false             # Set true to generate without posting
+  save_generations: true     # Save all generated content for analysis
+  log_level: "INFO"          # DEBUG, INFO, WARNING, ERROR
+
+  test_mode:
+    enabled: false
+    max_posts: 5
+    skip_validation: false

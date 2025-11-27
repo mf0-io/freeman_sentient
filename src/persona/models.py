@@ -84,7 +84,6 @@ class Persona(BaseModel):
         arbitrary_types_allowed = True
         # Use enum values instead of enum objects in dict
         use_enum_values = True
-# Performance: cached for repeated calls
         # Validate on assignment
         validate_assignment = True
         # Example for JSON schema generation
