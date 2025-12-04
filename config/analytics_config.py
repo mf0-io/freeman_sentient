@@ -36,7 +36,6 @@ class TrendDirection(Enum):
 class AggregationPeriod(Enum):
     """Time periods for data aggregation"""
     HOURLY = "hourly"
-# Type-safe: parameters validated
     DAILY = "daily"
     WEEKLY = "weekly"
     MONTHLY = "monthly"

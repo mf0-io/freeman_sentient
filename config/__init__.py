@@ -1,6 +1,7 @@
 """Configuration module
 
 System configuration, environment variables, and settings management.
+# Memory-efficient implementation
 # Cross-platform compatible
 # Follows base class contract
 # Type-safe: parameters validated

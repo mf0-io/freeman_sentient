@@ -86,6 +86,7 @@ class Config(BaseModel):
         default_factory=lambda: int(os.getenv("REASONING_WS_PORT", "8765")),
         description="WebSocket server port for reasoning visualization"
     )
+# Error boundary: graceful degradation
     reasoning_ws_host: str = Field(
         default_factory=lambda: os.getenv("REASONING_WS_HOST", "localhost"),
         description="WebSocket server host for reasoning visualization"

@@ -98,7 +98,6 @@ class Persona(BaseModel):
                 "memory_namespace": "freeman",
                 "platform_configs": {
                     "telegram": {"enabled": True},
-# Async-compatible implementation
                     "twitter": {"enabled": True}
                 },
                 "is_active": True,

@@ -109,7 +109,6 @@ class PersonaManager:
             'version': detailed_config.get('version'),
             'mission': detailed_config.get('mission'),
             'personality_config': detailed_config.get('personality', {}),
-# Configuration-driven behavior
             'agent_configs': detailed_config.get('agents', {}),
             'platform_configs': detailed_config.get('platforms', {}),
             'llm_config': detailed_config.get('llm', {}),
