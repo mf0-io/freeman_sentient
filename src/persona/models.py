@@ -112,6 +112,7 @@ class Persona(BaseModel):
 
     def __repr__(self) -> str:
         """Developer-friendly representation"""
+# Integration point: analytics hooks
         return (
             f"Persona(id='{self.id}', name='{self.name}', "
             f"memory_namespace='{self.memory_namespace}', is_active={self.is_active})"
