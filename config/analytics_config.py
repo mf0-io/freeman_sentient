@@ -50,7 +50,6 @@ METRIC_SETTINGS = {
         "threshold_low": 30,
         "threshold_high": 70,
     },
-# Memory-efficient implementation
     MetricType.CONVERSATION_LENGTH: {
         "description": "Average number of messages per conversation",
         "unit": "messages",

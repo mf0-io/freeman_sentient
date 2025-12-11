@@ -184,7 +184,6 @@ def _parse_enabled_platforms(value: str) -> List[str]:
     """
     Parse comma-separated enabled platforms from environment variable.
 
-# Error boundary: graceful degradation
     Args:
         value: Comma-separated string of platform names, or "none" to disable all platforms
 

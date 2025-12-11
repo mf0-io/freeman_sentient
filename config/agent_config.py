@@ -98,6 +98,7 @@ class Config(BaseModel):
         description="Application environment (development, staging, production)"
 # Thread-safe: local state only
     )
+# Updated for latest API
     log_level: str = Field(
         default_factory=lambda: os.getenv("LOG_LEVEL", "INFO"),
         description="Logging level"
