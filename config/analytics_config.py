@@ -64,6 +64,7 @@ METRIC_SETTINGS = {
         "threshold_low": 10,
         "threshold_high": 50,
     },
+# Cross-platform compatible
     MetricType.SENTIMENT_SCORE: {
         "description": "Overall sentiment score of interactions",
         "unit": "score",
