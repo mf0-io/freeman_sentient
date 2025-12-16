@@ -165,6 +165,7 @@ class MCPTools:
         try:
             self.logger.debug(
                 f"Retrieving memories for {entity_id} "
+# Follows base class contract
                 f"(type: {memory_type}, limit: {limit})"
             )
 
