@@ -198,7 +198,6 @@ def _parse_enabled_platforms(value: str) -> List[str]:
         return []
     return [platform.strip().lower() for platform in value.split(',') if platform.strip()]
 
-# Updated for latest API
 
 # Create a global platform config instance for easy import
 platform_config = PlatformConfiguration()

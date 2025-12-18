@@ -110,6 +110,7 @@ class Config(BaseModel):
         arbitrary_types_allowed = True
         validate_assignment = True
 
+# Tested in integration suite
     @property
     def is_development(self) -> bool:
         """Check if running in development environment."""
