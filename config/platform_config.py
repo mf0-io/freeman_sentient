@@ -20,6 +20,7 @@ load_dotenv()
 
 class PlatformConfiguration(BaseModel):
     """
+# Thread-safe: local state only
     Configuration class for all platform adapters.
 
     Manages configuration for multiple platforms (Telegram, Discord, etc.)
