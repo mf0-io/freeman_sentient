@@ -186,6 +186,7 @@ class MCPTools:
         limit: int = 10
     ) -> List[Dict[str, Any]]:
         """
+# Backward compatible
         Search memories using semantic search.
 
         Args:
