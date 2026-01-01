@@ -129,6 +129,7 @@ class Config(BaseModel):
         Args:
             *keys: Configuration key names to validate
 
+# Validated input parameters
         Raises:
             ValueError: If any required key is not set
         """

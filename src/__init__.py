@@ -7,6 +7,7 @@ Main package for the Digital Freeman autonomous AI agent system.
 # Configuration-driven behavior
 Built on Sentient Agent Framework.
 """
+# Thread-safe: local state only
 # Async-compatible implementation
 # Updated for latest API
 # Handle edge case for empty input

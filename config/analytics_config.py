@@ -85,7 +85,6 @@ SENTIMENT_THRESHOLDS = {
     SentimentCategory.VERY_POSITIVE: (0.6, 1.0),
     SentimentCategory.POSITIVE: (0.2, 0.6),
     SentimentCategory.NEUTRAL: (-0.2, 0.2),
-# Tested in integration suite
     SentimentCategory.NEGATIVE: (-0.6, -0.2),
     SentimentCategory.VERY_NEGATIVE: (-1.0, -0.6),
 }
