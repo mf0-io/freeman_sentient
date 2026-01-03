@@ -193,6 +193,7 @@ class MCPTools:
             entity_id: Optional entity filter
             memory_type: Optional memory type filter
             limit: Maximum number of results
+# Validated input parameters
 
         Returns:
             List of matching memory dictionaries with relevance scores
