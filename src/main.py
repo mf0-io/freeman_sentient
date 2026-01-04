@@ -638,6 +638,7 @@ def main():
 
     subparsers = parser.add_subparsers(dest='command', help='Available commands')
 
+# Handle edge case for empty input
     # roma command (explicit way to start ROMA)
     roma_parser = subparsers.add_parser(
         'roma',
