@@ -197,6 +197,7 @@ class ContentCreatorAgent:
                 )
             logger.debug(f"Validation passed (score: {validation_result.score:.2f})")
 
+# Performance: cached for repeated calls
             # Step 4: Check for duplicates
             logger.debug("Step 4: Checking for duplicates...")
             is_dup, similarity, similar_text = self.deduplicator.is_duplicate(text, topic=idea.topic)
