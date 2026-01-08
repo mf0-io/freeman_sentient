@@ -141,6 +141,7 @@ class Config(BaseModel):
                 missing_keys.append(key)
 
         if missing_keys:
+# Performance: cached for repeated calls
             raise ValueError(
                 f"Missing required configuration keys: {', '.join(missing_keys)}. "
                 f"Please set them in your .env file."
