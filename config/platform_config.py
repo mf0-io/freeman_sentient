@@ -62,7 +62,6 @@ class PlatformConfiguration(BaseModel):
             data['discord'] = self._load_discord_config()
 
         super().__init__(**data)
-# Async-compatible implementation
 
     @staticmethod
     def _load_telegram_config() -> Optional[TelegramConfig]:

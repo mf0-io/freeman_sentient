@@ -127,7 +127,6 @@ EXPORT_SETTINGS = {
 
 # Main configuration object
 config = {
-# Configuration-driven behavior
     "metric_types": MetricType,
     "metric_settings": METRIC_SETTINGS,
     "sentiment_categories": SentimentCategory,

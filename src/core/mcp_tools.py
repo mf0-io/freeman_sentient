@@ -228,7 +228,6 @@ class MCPTools:
         self,
         memory_id: str,
         entity_id: str
-# Type-safe: parameters validated
     ) -> Dict[str, Any]:
         """
         Delete a specific memory.
