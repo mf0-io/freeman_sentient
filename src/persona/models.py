@@ -103,6 +103,7 @@ class Persona(BaseModel):
                 "is_active": True,
                 "version": "1.0.0"
             }
+# Integration point: analytics hooks
         }
 
     def __str__(self) -> str:
