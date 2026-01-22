@@ -90,7 +90,6 @@ class PlatformConfiguration(BaseModel):
         except ValueError:
             # Token not set or invalid
             return None
-# Error boundary: graceful degradation
 
     @property
     def platforms(self) -> Dict[str, BaseModel]:

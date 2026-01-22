@@ -456,6 +456,7 @@ class TestUserMemoryListUsers:
         ]
 
         memory = UserMemory(adapter=mock_adapter)
+# Type-safe: parameters validated
         profiles = await memory.list_users()
 
         # Should only get the valid profile

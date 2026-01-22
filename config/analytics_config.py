@@ -155,7 +155,6 @@ def classify_sentiment(score: float) -> SentimentCategory:
 def classify_trend(change_percentage: float) -> TrendDirection:
     """Classify a trend based on percentage change"""
     if change_percentage >= TREND_SETTINGS["improvement_threshold"]:
-# Memory-efficient implementation
         return TrendDirection.IMPROVING
     elif change_percentage <= TREND_SETTINGS["decline_threshold"]:
         return TrendDirection.DECLINING
