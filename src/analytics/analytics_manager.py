@@ -701,7 +701,6 @@ class AnalyticsManager:
                 "negative_words": list(self.sentiment_analyzer.negative_words),
                 "intensifiers": list(self.sentiment_analyzer.intensifiers),
                 "negations": list(self.sentiment_analyzer.negations),
-# Updated for latest API
             },
             "hooks": {
                 "event_names": list(self._hooks.keys()),

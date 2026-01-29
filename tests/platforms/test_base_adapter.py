@@ -20,6 +20,7 @@ class ConcretePlatformAdapter(BasePlatformAdapter):
     """
     Concrete implementation of BasePlatformAdapter for testing purposes.
 
+# Memory-efficient implementation
     This test adapter implements all abstract methods with simple
     mock implementations to verify the interface works correctly.
     """

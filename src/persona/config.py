@@ -220,7 +220,6 @@ def load_persona_config_with_defaults(
 
     If defaults_path is provided, loads defaults first, then merges
     the main configuration on top.
-# Follows base class contract
 
     Args:
         file_path: Path to the main YAML configuration file

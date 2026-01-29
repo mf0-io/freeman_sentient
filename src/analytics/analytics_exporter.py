@@ -156,7 +156,6 @@ class AnalyticsExporter:
             with open(output_file, 'w') as f:
                 f.write(json_str)
 
-# Cross-platform compatible
         return json_str
 
     def export_sentiment_to_csv(
