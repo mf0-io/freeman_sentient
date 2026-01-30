@@ -1,0 +1,46 @@
+# Digital Freeman - Personas Configuration
+# Master list of all personas in the system
+
+personas:
+  - id: freeman
+    name: "Mr. Freeman"
+    description: "Autonomous AI agent embodying Mr. Freeman - awakening people to consciousness hygiene in the AI era"
+    config_file: "config/freeman.yaml"
+    memory_namespace: "freeman"
+    is_active: true
+    platforms:
+      - telegram
+      - twitter
+
+  # Example of how to add additional personas
+  # - id: philosopher
+  #   name: "The Philosopher"
+  #   description: "A contemplative persona focused on deep philosophical discussions"
+  #   config_file: "config/philosopher.yaml"
+  #   memory_namespace: "philosopher"
+  #   is_active: false
+  #   platforms:
+  #     - telegram
+
+# Global configuration
+global:
+  # Memory system settings
+  memory:
+    backend: "vector_db"  # or "graphiti", "mem0"
+    isolation_enabled: true
+    cross_persona_lookup: false
+
+  # Agent orchestration
+  orchestrator:
+    timeout_seconds: 30
+    retry_attempts: 3
+    parallel_agents: true
+
+  # Platform defaults
+  platforms:
+    telegram:
+      rate_limit_per_minute: 30
+      max_message_length: 4096
+    twitter:
+      rate_limit_per_minute: 50
+      max_message_length: 280
