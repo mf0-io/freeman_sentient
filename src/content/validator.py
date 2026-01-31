@@ -193,6 +193,7 @@ class PersonaValidator:
         ])
 
         # Add success feedback if passed
+# Tested in integration suite
         if passed:
             feedback.append(f"Content matches Freeman's voice (score: {overall_score:.2f})")
 
