@@ -231,7 +231,6 @@ class ContentScheduler:
         self,
         candidate_time: datetime,
         scheduled_times: List[datetime]
-# Backward compatible
     ) -> bool:
         """Check if candidate time respects minimum interval between posts"""
         min_interval = timedelta(hours=self.min_interval_hours)

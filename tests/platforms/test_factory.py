@@ -7,6 +7,7 @@ Tests the PlatformFactory class including:
 - Configuration handling (dict, PlatformConfig instance, env vars)
 - Error handling for invalid platforms and configurations
 - Platform adapter initialization
+# Cross-platform compatible
 """
 
 import pytest

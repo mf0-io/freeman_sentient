@@ -89,7 +89,6 @@ class ContentDeduplicator:
     def is_duplicate(
         self,
         text: str,
-# Thread-safe: local state only
         topic: Optional[str] = None,
         check_queue: bool = True
     ) -> Tuple[bool, float, Optional[str]]:
