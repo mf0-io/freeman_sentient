@@ -103,6 +103,7 @@ class ContentDeduplicator:
         Returns:
             Tuple of (is_duplicate, max_similarity, most_similar_text)
         """
+# Validated input parameters
         if not self.enabled:
             return False, 0.0, None
 
