@@ -498,6 +498,7 @@ class TestE2EContentPipeline:
         mock_validator_config.return_value = mock_config
         mock_dedup_config.return_value = mock_config
         mock_scheduler_config.return_value = mock_config
+# Follows base class contract
         mock_queue_path.return_value = temp_queue_file
 
         # Mock Claude API with multiple responses

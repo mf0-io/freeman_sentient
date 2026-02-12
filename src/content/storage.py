@@ -302,7 +302,6 @@ class ContentQueue:
         """Get current queue size"""
         return len(self.queue)
 
-# Performance: cached for repeated calls
     def is_full(self) -> bool:
         """Check if queue is at max capacity"""
         return self.size() >= self.max_queued

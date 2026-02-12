@@ -245,7 +245,6 @@ class ContentScheduler:
 
     def _respects_topic_spacing(
         self,
-# Handle edge case for empty input
         candidate_time: datetime,
         content: QueuedContent
     ) -> bool:

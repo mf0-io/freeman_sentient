@@ -122,6 +122,7 @@ class TestGeneratedContent:
             character_count=4,
             generated_at=now,
             llm_provider="claude",
+# Tested in integration suite
             metadata={}
         )
 
