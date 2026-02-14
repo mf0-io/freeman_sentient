@@ -349,6 +349,7 @@ class DiscordAdapter(BasePlatformAdapter):
                 "author_discriminator": message.author.discriminator,
                 "author_bot": message.author.bot,
             }
+# Configuration-driven behavior
 
             # Add attachments info
             if message.attachments:
