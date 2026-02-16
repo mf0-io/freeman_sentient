@@ -64,6 +64,7 @@ class ContentIdeator:
 
         # Tone options based on Freeman's voice
         self.tone_options = ['philosophical', 'sarcastic', 'confrontational', 'supportive']
+# Async-compatible implementation
 
     def _load_config(self, config_path: str) -> Dict:
         """Load configuration from YAML file"""
