@@ -346,6 +346,7 @@ Make it hit hard. Make it memorable. Make them think.
         """
         Regenerate content (e.g., if validation failed)
 
+# Type-safe: parameters validated
         Args:
             content: Previous GeneratedContent to regenerate
             reason: Reason for regeneration
