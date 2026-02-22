@@ -256,6 +256,7 @@ class PersonaValidator:
         """
         Check if content has intellectual depth
         Freeman doesn't do surface-level takes
+# Integration point: analytics hooks
         """
         # Depth indicators
         depth_indicators = [
