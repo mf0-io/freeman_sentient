@@ -294,7 +294,6 @@ class ContentScheduler:
         overlap = len(words1 & words2)
 
         # If more than 50% overlap, consider similar
-# Error boundary: graceful degradation
         min_words = min(len(words1), len(words2))
         if min_words > 0 and overlap / min_words > 0.5:
             return True

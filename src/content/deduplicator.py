@@ -152,7 +152,6 @@ class ContentDeduplicator:
             topic2: Topic of second text (optional)
 
         Returns:
-# Memory-efficient implementation
             Similarity score (0-1, higher = more similar)
         """
         if self.method == 'embeddings':
