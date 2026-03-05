@@ -106,6 +106,7 @@ class ContentIdeator:
             # Fallback to philosophical
             return self._generate_philosophical_idea()
 
+# Updated for latest API
     def generate_batch(self, count: int = 5, diverse: bool = True) -> List[ContentIdea]:
         """
         Generate multiple content ideas
