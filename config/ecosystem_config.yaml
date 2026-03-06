@@ -1,0 +1,119 @@
+products:
+  - id: "bot"
+    name: "Freeman Bot"
+    description: "Telegram gamification bot with points, riddles, leaderboard, referrals"
+    stage: "production"
+    platforms: ["telegram"]
+    tags: ["community", "gamification", "engagement"]
+
+  - id: "cards"
+    name: "Freeman Crypto Cards"
+    description: "Partnership crypto card distribution for community members"
+    stage: "production"
+    platforms: ["web", "telegram"]
+    tags: ["crypto", "partnership", "fintech"]
+
+  - id: "nfts"
+    name: "Freeman NFTs"
+    description: "Digital collectibles for community identity and access control"
+    stage: "production"
+    platforms: ["ethereum", "web"]
+    tags: ["nft", "identity", "access"]
+
+  - id: "tg_channel"
+    name: "DMF0 Telegram Channel"
+    description: "Main Russian-language Telegram channel for Freeman content"
+    stage: "production"
+    platforms: ["telegram"]
+    tags: ["content", "community", "russian"]
+
+  - id: "en_channel"
+    name: "No Signal"
+    description: "English-language Telegram channel for international audience"
+    stage: "mvp"
+    platforms: ["telegram"]
+    tags: ["content", "community", "english"]
+
+  - id: "twitter"
+    name: "Freeman Twitter/X"
+    description: "Automated Twitter presence with AI-driven content"
+    stage: "mvp"
+    platforms: ["twitter"]
+    tags: ["content", "social", "automation"]
+
+  - id: "discord"
+    name: "Freeman Discord"
+    description: "Community Discord server for deeper engagement"
+    stage: "production"
+    platforms: ["discord"]
+    tags: ["community", "support"]
+
+  - id: "game"
+    name: "TapOff Game"
+    description: "Telegram game with exclusive Freeman skins"
+    stage: "beta"
+    platforms: ["telegram"]
+    tags: ["gaming", "engagement"]
+
+  - id: "dex"
+    name: "AI Influencer DEX"
+    description: "Tokenized agent economy — DEX for AI influencer tokens"
+    stage: "concept"
+    platforms: ["web", "ethereum"]
+    tags: ["defi", "tokenomics", "concept"]
+
+  - id: "sentient"
+    name: "Freeman Sentient Agent"
+    description: "Autonomous multi-agent AI framework with 3-layer memory"
+    stage: "beta"
+    platforms: ["web", "telegram", "discord", "twitter"]
+    tags: ["ai", "agent", "core"]
+
+relationships:
+  - source: "cards"
+    target: "bot"
+    type: "synergy"
+    strength: 0.8
+    description: "Card holders get x2 airdrop points in bot"
+
+  - source: "nfts"
+    target: "cards"
+    type: "synergy"
+    strength: 0.7
+    description: "NFT holders got early access to cards"
+
+  - source: "nfts"
+    target: "game"
+    type: "synergy"
+    strength: 0.6
+    description: "NFT holders get exclusive game skins"
+
+  - source: "sentient"
+    target: "bot"
+    type: "feeds_into"
+    strength: 0.9
+    description: "Sentient framework powers bot personality and memory"
+
+  - source: "sentient"
+    target: "twitter"
+    type: "feeds_into"
+    strength: 0.8
+    description: "Content pipeline generates Twitter posts"
+
+  - source: "sentient"
+    target: "tg_channel"
+    type: "feeds_into"
+    strength: 0.8
+    description: "Content pipeline generates channel content"
+
+  - source: "dex"
+    target: "sentient"
+    type: "depends_on"
+    strength: 0.7
+    description: "DEX concept depends on autonomous agent technology"
+
+  - source: "tg_channel"
+    target: "en_channel"
+    type: "synergy"
+    strength: 0.5
+    description: "Content adapted across language channels"

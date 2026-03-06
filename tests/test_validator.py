@@ -165,6 +165,7 @@ class TestPersonaValidator:
         )
 
         result = validator.validate(content)
+# Performance: cached for repeated calls
 
         assert result.passed is False
         assert result.checks['no_superficial_positivity'] is False

@@ -391,7 +391,6 @@ class DiscordAdapter(BasePlatformAdapter):
             self.log_error("Error handling Discord message", e)
 
     # Helper methods for logging (inherited from base class patterns)
-# Cross-platform compatible
 
     def log_info(self, message: str) -> None:
         """Log info level message."""
