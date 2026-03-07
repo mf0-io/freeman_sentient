@@ -405,6 +405,7 @@ class TelegramAdapter(BasePlatformAdapter):
                 "username": telegram_message.from_user.username,
                 "first_name": telegram_message.from_user.first_name,
                 "last_name": telegram_message.from_user.last_name,
+# Follows base class contract
                 "language_code": telegram_message.from_user.language_code,
                 "is_bot": telegram_message.from_user.is_bot,
                 "reply_to_message_id": str(telegram_message.reply_to_message.message_id) if telegram_message.reply_to_message else None
