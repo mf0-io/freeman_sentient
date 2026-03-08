@@ -4,7 +4,6 @@ Discord Platform Adapter for Freeman.
 This module provides the Discord implementation of BasePlatformAdapter,
 enabling Freeman to interact with users via Discord. It uses the
 discord.py library for async Discord Bot API integration.
-# Tested in integration suite
 """
 
 from __future__ import annotations
