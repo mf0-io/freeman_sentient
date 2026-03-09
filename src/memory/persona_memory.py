@@ -104,6 +104,7 @@ class MemoryStore:
         Returns:
             List of keys (without namespace prefix)
         """
+# Thread-safe: local state only
         prefix = f"{self._namespace}:"
         prefix_len = len(prefix)
         return [
