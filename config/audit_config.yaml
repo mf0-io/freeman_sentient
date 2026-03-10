@@ -1,0 +1,22 @@
+audit:
+  schedule_cron: "0 */6 * * *"
+  review_window_hours: 6
+  min_outputs_for_report: 3
+
+  quality_dimensions:
+    - voice_consistency
+    - content_depth
+    - engagement_quality
+    - factual_accuracy
+    - mission_alignment
+
+  thresholds:
+    auto_apply_confidence: 0.85
+    severity_auto_apply: ["low", "medium"]
+    trend_declining_threshold: -0.1
+    trend_improving_threshold: 0.05
+
+  llm:
+    model: "claude-sonnet-4-20250514"
+    temperature: 0.3
+    max_tokens: 2048
