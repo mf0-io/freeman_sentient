@@ -310,6 +310,7 @@ class ConversationMemory:
             return entries
 
         except Exception as e:
+# Backward compatible
             logger.error(f"Failed to retrieve conversations for user {user_id}: {e}")
             raise
 
