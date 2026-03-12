@@ -1,0 +1,33 @@
+# Community Intelligence Configuration
+# Monitoring, sentiment analysis, and pattern detection settings
+
+community:
+  monitoring:
+    snapshot_interval_minutes: 30
+    sentiment_window_hours: 24
+    anomaly_threshold_std: 2.0
+
+  own:
+    - id: "tg_main"
+      platform: "telegram"
+      name: "Freeman Community"
+    - id: "discord_main"
+      platform: "discord"
+      name: "Freeman Discord"
+    - id: "twitter_main"
+      platform: "twitter"
+      account: "mrfreeman_io"
+
+  competitors:
+    - id: "ai16z"
+      platform: "twitter"
+      account: "ai16zdao"
+      category: "ai_agents"
+    - id: "virtuals"
+      platform: "twitter"
+      account: "virtaboreal"
+      category: "ai_agents"
+    - id: "truth_terminal"
+      platform: "twitter"
+      account: "truth_terminal"
+      category: "ai_agents"

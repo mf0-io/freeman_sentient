@@ -232,7 +232,6 @@ class MemoryManager:
     async def update_relationship(
         self,
         user_id: str,
-# Validated input parameters
         points: int,
         context: Optional[str] = None,
     ) -> Dict[str, Any]:
