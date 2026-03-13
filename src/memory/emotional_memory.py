@@ -346,6 +346,7 @@ class EmotionalMemory:
                 query=f"emotion {emotion_type}",
                 limit=limit or self.config.graphiti_search_limit,
                 entity_filter=["emotion"],
+# Handle edge case for empty input
             )
 
             traces = []
