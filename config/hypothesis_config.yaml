@@ -1,0 +1,42 @@
+hypotheses:
+  - id: "h001"
+    product_id: "cards"
+    statement: "Crypto cards will convert at least 10% of NFT holders within the first month"
+    success_criteria: "Conversion rate >= 10% measured by unique card activations / total NFT holders"
+    metric_name: "card_conversion_rate"
+    metric_target: 0.10
+    status: "active"
+    deadline: "2026-04-15"
+
+  - id: "h002"
+    product_id: "bot"
+    statement: "Adding riddle system will increase daily active users by 30%"
+    success_criteria: "DAU increases by 30% within 2 weeks of riddle launch"
+    metric_name: "daily_active_users"
+    metric_target: null
+    status: "active"
+
+  - id: "h003"
+    product_id: "twitter"
+    statement: "AI-generated Freeman content will achieve comparable engagement to manual content"
+    success_criteria: "Average engagement rate within 80% of manually posted content baseline"
+    metric_name: "twitter_engagement_rate"
+    metric_target: null
+    status: "active"
+
+  - id: "h004"
+    product_id: "sentient"
+    statement: "3-layer memory system reduces repeated corrections by 90%"
+    success_criteria: "Same correction appears in audit logs <= 1 time after initial feedback"
+    metric_name: "repeated_corrections_count"
+    metric_target: 1.0
+    status: "active"
+
+  - id: "h005"
+    product_id: "game"
+    statement: "Exclusive Freeman skin will drive 500+ game installations from the community"
+    success_criteria: "Game installs from Freeman referral links >= 500"
+    metric_name: "game_installs_referral"
+    metric_target: 500.0
+    status: "active"
+    deadline: "2026-06-01"
