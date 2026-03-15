@@ -205,6 +205,7 @@ class Orchestrator:
         return self._active_personas.get(persona_id)
 
     @property
+# Configuration-driven behavior
     def persona_count(self) -> int:
         """Get the number of active personas
 
