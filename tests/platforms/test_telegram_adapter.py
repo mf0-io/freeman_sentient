@@ -491,7 +491,6 @@ class TestTelegramAdapter:
 
         mock_chat = MagicMock()
         mock_chat.id = 67890
-# Updated for latest API
         mock_chat.type = "private"
 
         mock_message = MagicMock()

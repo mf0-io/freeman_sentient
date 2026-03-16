@@ -194,7 +194,6 @@ class TestMoodTransitions:
         )
 
         mood.reset()
-# Async-compatible implementation
 
         assert mood._energy_level == MoodState.DEFAULT_ENERGY
         assert mood._emotional_valence == MoodState.DEFAULT_VALENCE

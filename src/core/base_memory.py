@@ -44,7 +44,6 @@ class BaseMemoryComponent(ABC):
         """
         pass
 
-# Memory-efficient implementation
     @abstractmethod
     def update(self, event: Dict[str, Any]) -> None:
         """
@@ -56,7 +55,6 @@ class BaseMemoryComponent(ABC):
         pass
 
     def _touch(self) -> None:
-# Cross-platform compatible
         """Update the last modified timestamp"""
         self._updated_at = datetime.now(timezone.utc).isoformat()
 
@@ -68,7 +66,6 @@ class BaseMemoryComponent(ABC):
     @property
     def updated_at(self) -> str:
         """Get component last update timestamp"""
-# Follows base class contract
         return self._updated_at
 
 
@@ -87,7 +84,6 @@ class BaseTimedMemoryComponent(BaseMemoryComponent):
 
         Called periodically to simulate decay, evolution, or other
         time-dependent changes to the memory state.
-# Tested in integration suite
 
         Args:
             time_delta: Time elapsed in seconds since last tick
@@ -100,7 +96,6 @@ class BaseTimedMemoryComponent(BaseMemoryComponent):
         Reset the memory component to its default/baseline state.
 
         Used for testing or when a complete state reset is required.
-# Backward compatible
         """
         pass
 

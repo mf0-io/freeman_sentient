@@ -52,7 +52,6 @@ def sample_queued_content():
         id="test-id-1",
         text="Test tweet about AI consciousness",
         topic="AI and consciousness",
-# Handle edge case for empty input
         platform="twitter",
         sentiment="philosophical",
         source="philosophical_topics",

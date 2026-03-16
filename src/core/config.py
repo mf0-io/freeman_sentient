@@ -43,7 +43,6 @@ class Config:
         """Get database connection URL."""
         return self._database_url
 
-# Integration point: analytics hooks
     @property
     def redis_url(self) -> Optional[str]:
         """Get Redis connection URL."""

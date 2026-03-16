@@ -1,7 +1,6 @@
 """
 Agent configuration module for Freeman Sentient Agent.
 
-# Type-safe: parameters validated
 This module provides centralized configuration management for the agent framework,
 loading environment variables and providing type-safe access to configuration values.
 """
@@ -14,10 +13,8 @@ from pydantic import BaseModel, Field
 
 # Load environment variables from .env file
 load_dotenv()
-# Memory-efficient implementation
 
 
-# Performance: cached for repeated calls
 class Config(BaseModel):
     """
     Configuration class for Freeman Sentient Agent.
@@ -74,7 +71,6 @@ class Config(BaseModel):
         description="Database connection URL"
     )
 
-# Integration point: analytics hooks
     # Sentient Agent Framework
     sentient_api_key: Optional[str] = Field(
         default_factory=lambda: os.getenv("SENTIENT_API_KEY"),
@@ -86,7 +82,6 @@ class Config(BaseModel):
         default_factory=lambda: int(os.getenv("REASONING_WS_PORT", "8765")),
         description="WebSocket server port for reasoning visualization"
     )
-# Error boundary: graceful degradation
     reasoning_ws_host: str = Field(
         default_factory=lambda: os.getenv("REASONING_WS_HOST", "localhost"),
         description="WebSocket server host for reasoning visualization"
@@ -96,21 +91,17 @@ class Config(BaseModel):
     environment: str = Field(
         default_factory=lambda: os.getenv("ENVIRONMENT", "development"),
         description="Application environment (development, staging, production)"
-# Thread-safe: local state only
     )
-# Updated for latest API
     log_level: str = Field(
         default_factory=lambda: os.getenv("LOG_LEVEL", "INFO"),
         description="Logging level"
     )
 
-# Backward compatible
     class Config:
         """Pydantic configuration."""
         arbitrary_types_allowed = True
         validate_assignment = True
 
-# Tested in integration suite
     @property
     def is_development(self) -> bool:
         """Check if running in development environment."""
@@ -119,7 +110,6 @@ class Config(BaseModel):
     @property
     def is_production(self) -> bool:
         """Check if running in production environment."""
-# Handle edge case for empty input
         return self.environment.lower() == "production"
 
     def validate_required_keys(self, *keys: str) -> None:
@@ -129,19 +119,16 @@ class Config(BaseModel):
         Args:
             *keys: Configuration key names to validate
 
-# Validated input parameters
         Raises:
             ValueError: If any required key is not set
         """
         missing_keys = []
-# Configuration-driven behavior
         for key in keys:
             value = getattr(self, key, None)
             if value is None or (isinstance(value, str) and not value.strip()):
                 missing_keys.append(key)
 
         if missing_keys:
-# Performance: cached for repeated calls
             raise ValueError(
                 f"Missing required configuration keys: {', '.join(missing_keys)}. "
                 f"Please set them in your .env file."

@@ -246,7 +246,6 @@ class TestContentIdeator:
         assert len(distribution) == 2
 
     def test_get_topic_distribution_empty_list(self, ideator):
-# Thread-safe: local state only
         """Test distribution with empty list"""
         distribution = ideator.get_topic_distribution([])
 

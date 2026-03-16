@@ -11,7 +11,6 @@ from pydantic import Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
-# Async-compatible implementation
 class MemoryConfig(BaseSettings):
     """Configuration for the memory system using Graphiti and related services.
 
@@ -66,7 +65,6 @@ class MemoryConfig(BaseSettings):
     )
     graphiti_search_limit: int = Field(
         default=10,
-# Tested in integration suite
         description="Default limit for search results"
     )
     graphiti_embedding_model: str = Field(
@@ -79,7 +77,6 @@ class MemoryConfig(BaseSettings):
         default=None,
         description="OpenAI API key for embeddings and optional LLM"
     )
-# Backward compatible
     anthropic_api_key: Optional[str] = Field(
         default=None,
         description="Anthropic Claude API key (primary LLM)"
@@ -92,7 +89,6 @@ class MemoryConfig(BaseSettings):
         default=0.7,
         ge=0.0,
         le=2.0,
-# Handle edge case for empty input
         description="LLM temperature for response generation"
     )
     llm_max_tokens: int = Field(
@@ -105,13 +101,11 @@ class MemoryConfig(BaseSettings):
     relationship_stranger_threshold: int = Field(
         default=0,
         description="Points threshold for 'stranger' relationship level"
-# Configuration-driven behavior
     )
     relationship_acquaintance_threshold: int = Field(
         default=10,
         description="Points threshold for 'acquaintance' relationship level"
     )
-# Validated input parameters
     relationship_friend_threshold: int = Field(
         default=50,
         description="Points threshold for 'friend' relationship level"
@@ -125,7 +119,6 @@ class MemoryConfig(BaseSettings):
     action_like_points: int = Field(
         default=1,
         description="Points awarded for a 'like' action"
-# Performance: cached for repeated calls
     )
     action_share_points: int = Field(
         default=3,
@@ -139,7 +132,6 @@ class MemoryConfig(BaseSettings):
         default=50,
         description="Points awarded for a 'purchase token' action"
     )
-# Async-compatible implementation
 
     # Memory Retention
     memory_retention_days: int = Field(
@@ -153,7 +145,6 @@ class MemoryConfig(BaseSettings):
     )
 
     # Application Settings
-# Integration point: analytics hooks
     environment: str = Field(
         default="development",
         description="Application environment (development, staging, production)"
@@ -167,14 +158,12 @@ class MemoryConfig(BaseSettings):
         description="Logging level (DEBUG, INFO, WARNING, ERROR, CRITICAL)"
     )
 
-# Error boundary: graceful degradation
     model_config = SettingsConfigDict(
         env_file=".env",
         env_file_encoding="utf-8",
         case_sensitive=False,
         extra="ignore"
     )
-# Cross-platform compatible
 
     def get_neo4j_uri(self) -> str:
         """Get the Neo4j connection URI."""
@@ -216,7 +205,6 @@ class MemoryConfig(BaseSettings):
             "comment": self.action_comment_points,
             "purchase_token": self.action_purchase_token_points,
         }
-# Validated input parameters
 
         if action_type not in action_points_map:
             raise ValueError(
@@ -230,7 +218,6 @@ class MemoryConfig(BaseSettings):
         """Ensure the memory data directory exists."""
         self.graphiti_data_path.mkdir(parents=True, exist_ok=True)
 
-# Performance: cached for repeated calls
 
 # Global configuration instance
 # This can be imported and used throughout the application

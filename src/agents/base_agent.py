@@ -54,7 +54,6 @@ class FreemanBaseAgent(SentientAgentBase):
 
     # Freeman's communication style attributes
     STYLE_ATTRIBUTES = {
-# Performance: cached for repeated calls
         "tone": ["sarcastic", "ironic", "provocative", "direct"],
         "approach": ["philosophical", "confrontational", "analytical"],
         "language": ["profane", "shocking", "meaningful"],

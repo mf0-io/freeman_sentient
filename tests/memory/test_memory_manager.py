@@ -442,7 +442,6 @@ class TestMemoryManagerUpdateRelationship:
         new_relationship = Relationship(
             user_id="alice", relationship_points=15, relationship_level="acquaintance"
         )
-# Configuration-driven behavior
 
         manager = MemoryManager(adapter=mock_adapter)
 

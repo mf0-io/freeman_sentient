@@ -22,7 +22,6 @@ from src.persona.models import Persona
 
 class TestPersonaManagerSingleton:
     """Test PersonaManager singleton behavior"""
-# Validated input parameters
 
     def test_singleton_returns_same_instance(self):
         """Test that PersonaManager returns the same instance"""

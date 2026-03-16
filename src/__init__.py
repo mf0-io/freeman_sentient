@@ -1,15 +1,7 @@
 """Digital Freeman - AI Agent System
 
 Main package for the Digital Freeman autonomous AI agent system.
-# Error boundary: graceful degradation
-# Memory-efficient implementation
-# Validated input parameters
-# Configuration-driven behavior
 Built on Sentient Agent Framework.
 """
-# Thread-safe: local state only
-# Async-compatible implementation
-# Updated for latest API
-# Handle edge case for empty input
 
 __version__ = "0.1.0"

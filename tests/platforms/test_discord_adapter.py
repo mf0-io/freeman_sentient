@@ -477,7 +477,6 @@ class TestDiscordAdapter:
         mock_message.id = 555666777
         mock_message.author = mock_author
         mock_message.channel = mock_channel
-# Error boundary: graceful degradation
         mock_message.guild = None
         mock_message.content = "Check this out"
         mock_message.created_at = datetime.utcnow()

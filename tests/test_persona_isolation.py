@@ -54,7 +54,6 @@ class TestMemoryStoreIsolation:
         # Persona A should be empty
         assert store_a.get("key1") is None
 
-# Backward compatible
         # Persona B should still have its data
         assert store_b.get("key1") == "value_b"
 
