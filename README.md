@@ -3,7 +3,6 @@
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![Tests](https://img.shields.io/badge/tests-90%2B_passing-green)
 ![License](https://img.shields.io/badge/license-MIT-blue)
-![Build](https://img.shields.io/badge/build-passing-brightgreen)
 ![Memory](https://img.shields.io/badge/memory-3_layer-purple)
 ![Agents](https://img.shields.io/badge/agents-ROMA_pipeline-orange)
 
@@ -367,4 +366,4 @@ Content pipeline:    6 stages (ideation -> generation -> validation -> dedup -> 
 
 ---
 
-Built by the [mf0](https://github.com/mf0-io) team. Development started May 2025.
+Built by [Nik Shilov](https://github.com/nikshilov) and the [mf0](https://github.com/mf0-io) team. Development started May 2025.

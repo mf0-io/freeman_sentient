@@ -19,7 +19,8 @@ try:
     )
 except ImportError:
     class AbstractAgent:
-        def __init__(self, **kwargs): pass
+        def __init__(self, name: str = "Agent", **kwargs):
+            self.name = name
     Session = None
     Query = None
     ResponseHandler = None
